@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { COSTO_TERMO, MERCADOPAGO_API_KEY, NGROK_URL, QR_ID, TITULO_COMPRA, USER_ID } from '../config';
+import { COSTO_TERMO, MERCADOPAGO_API_KEY, NGROK_URL, QR_ID, TITULO_COMPRA, USER_ID } from '../config.js';
 export const createOrder = (req, res) => {
 
     let data = JSON.stringify({

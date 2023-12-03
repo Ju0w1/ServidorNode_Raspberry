@@ -1,6 +1,6 @@
 import {MercadoPagoConfig, MerchantOrder} from 'mercadopago';
 import { spawn } from 'node:child_process';
-import { MERCADOPAGO_API_KEY } from '../config';
+import { MERCADOPAGO_API_KEY } from '../config.js';
 
 export const receiveWebhook = (req, res) => {
     const paymentReq = req.query;
