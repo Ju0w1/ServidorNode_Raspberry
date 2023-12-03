@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { COSTO_TERMO, MERCADOPAGO_API_KEY, NGROK_URL, QR_ID, TITULO_COMPRA, USER_ID } from '../config';
 export const createOrder = (req, res) => {
 
     let data = JSON.stringify({
@@ -8,27 +9,27 @@ export const createOrder = (req, res) => {
         {
         "sku_number": "A123K9191938",
         "category": "marketplace",
-        "title": "Termo de agua caliente",
+        "title": TITULO_COMPRA,
         "description": "Cobro del dispensador",
-        "unit_price": 20,
+        "unit_price": COSTO_TERMO,
         "quantity": 1,
         "unit_measure": "unit",
-        "total_amount": 20
+        "total_amount": COSTO_TERMO
         }
     ],
-    "title": "Termo de agua caliente",
-    "total_amount": 20,
-    "notification_url": "https://dc93-190-135-185-95.ngrok.io/webhook"
+    "title": TITULO_COMPRA,
+    "total_amount": COSTO_TERMO,
+    "notification_url": `${NGROK_URL}/webhook`
     
     });
 
     let config = {
     method: 'put',
     maxBodyLength: Infinity,
-    url: 'https://api.mercadopago.com/instore/orders/qr/seller/collectors/1575603154/pos/DISP001QR003/qrs',
+    url: `https://api.mercadopago.com/instore/orders/qr/seller/collectors/${USER_ID}/pos/${QR_ID}/qrs`,
     headers: { 
         'Content-Type': 'application/json', 
-        'Authorization': 'Bearer TEST-5191900924695120-120219-c932f87aa8650a99b05ab6b638334e9e-1575603154'
+        'Authorization': `Bearer ${MERCADOPAGO_API_KEY}`
     },
     data : data
     };

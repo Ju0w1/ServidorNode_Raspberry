@@ -1,12 +1,13 @@
 import {MercadoPagoConfig, MerchantOrder} from 'mercadopago';
 import { spawn } from 'node:child_process';
+import { MERCADOPAGO_API_KEY } from '../config';
 
 export const receiveWebhook = (req, res) => {
     const paymentReq = req.query;
     // console.log(paymentReq);
 
     if( paymentReq.topic === "merchant_order") {
-        const client = new MercadoPagoConfig({ accessToken: 'TEST-5191900924695120-120219-c932f87aa8650a99b05ab6b638334e9e-1575603154' });
+        const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_API_KEY });
 
         const merchantOrder = new MerchantOrder(client);
 
