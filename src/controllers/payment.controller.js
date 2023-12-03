@@ -18,7 +18,7 @@ export const createOrder = (req, res) => {
     ],
     "title": "Termo de agua caliente",
     "total_amount": 20,
-    "notification_url": "https://dc93-190-135-185-95.ngrok.io/webhook"
+    "notification_url": "https://6fdc-190-135-185-95.ngrok.io/webhook"
     
     });
 
