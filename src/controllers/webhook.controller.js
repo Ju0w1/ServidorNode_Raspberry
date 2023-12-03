@@ -17,41 +17,7 @@ export const receiveWebhook = (req, res) => {
                 console.log(data.order_status)
                 console.log('Habilitar electrovalvula')
             
-                var gpiop = require('rpi-gpio').promise;
- 
-                // Prendo
-                gpiop.setup(20, gpiop.DIR_OUT)
-                    .then(() => {
-                        return gpiop.write(20, true)
-                    })
-                    .catch((err) => {
-                        console.log('Error: ', err.toString())
-                    })
                 
-                gpiop.setup(26, gpiop.DIR_OUT)
-                    .then(() => {
-                        return gpiop.write(26, true)
-                    })
-                    .catch((err) => {
-                        console.log('Error: ', err.toString())
-                    })
-             
-                // Apago
-                gpiop.setup(20, gpiop.DIR_OUT)
-                    .then(() => {
-                        return gpiop.write(20, false)
-                    })
-                    .catch((err) => {
-                        console.log('Error: ', err.toString())
-                    })
-                
-                gpiop.setup(26, gpiop.DIR_OUT)
-                    .then(() => {
-                        return gpiop.write(26, false)
-                    })
-                    .catch((err) => {
-                        console.log('Error: ', err.toString())
-                    })
             }
         })
         .catch(console.log);
