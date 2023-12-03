@@ -19,7 +19,7 @@ export const receiveWebhook = (req, res) => {
                 console.log(data.order_status)
                 console.log('Habilitar electrovalvula')
 
-                const child = spawn('sudo python3 /home/ju0wi/ServidorNode_Raspberry/relaysPrueba.py'); 
+                const child = spawn('sudo', ['python3', '/home/ju0wi/ServidorNode_Raspberry/relaysPrueba.py']);
   
                 console.log(`${new Date()} : CHILD STARTED`);
                 child.stdout.on("data", (d) => console.log(`${new Date()} : STDOUT => ${d}`));
