@@ -1,0 +1,12 @@
+apps:
+      - name : 'ngrok'
+        script: 'ngrok'
+        args: 'http --domain=oriented-hamster-select.ngrok-free.app 3000'
+        instances: '1'
+        autorestart: true
+        max_restarts: 10
+        max_memory_restart: '500M'
+        watch : false
+        error_file: 'err-prod.log'
+        out_file: 'out-prod.log'
+        log_file: 'combined-prod.log'

@@ -1,0 +1,12 @@
+apps:
+      - name : 'serverMercadopago'
+        script: 'node'
+        args: '--experimental-modules /home/ju0wi/ServidorNode_Raspberry/src/index.js'
+        instances: '1'
+        autorestart: true
+        max_restarts: 10
+        max_memory_restart: '500M'
+        watch : false
+        error_file: 'logs/err-prod.log'
+        out_file: 'logs/out-prod.log'
+        log_file: 'logs/combined-prod.log'

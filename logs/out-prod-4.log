@@ -1,0 +1,36 @@
+Server en el puerto 3000
+{"in_store_order_id":"c691d405-1b31-40f7-9289-49b8825fb326","qr_data":"00020101021243650016COM.MERCADOLIBRE020130636c691d405-1b31-40f7-9289-49b8825fb3265011000711111115204970053038585802UY5909Test Test6009UNDEFINED6304A876"}
+[0mPOST /create-order [32m200[0m 1912.359 ms - 2[0m
+[0mPOST /webhook?id=13956012274&topic=merchant_order [32m200[0m 136.334 ms - 7[0m
+[0mPOST /webhook?id=13956018696&topic=merchant_order [32m200[0m 40.012 ms - 7[0m
+[0mPOST /webhook?id=68239648185&topic=payment [32m200[0m 8.675 ms - 7[0m
+[0mPOST /webhook?data.id=68239648185&type=payment [32m200[0m 7.735 ms - 7[0m
+[0mPOST /webhook?id=13956018696&topic=merchant_order [32m200[0m 41.425 ms - 7[0m
+paid
+Habilitar electrovalvula
+Fri Dec 08 2023 22:06:58 GMT-0300 (Uruguay Standard Time) : CHILD STARTED
+Fri Dec 08 2023 22:07:14 GMT-0300 (Uruguay Standard Time) : CHILD ENDED
+{"in_store_order_id":"4158c6b7-7589-4f46-bf73-7f649d005010","qr_data":"00020101021243650016COM.MERCADOLIBRE0201306364158c6b7-7589-4f46-bf73-7f649d0050105011000711111115204970053038585802UY5909Test Test6009UNDEFINED630423AD"}
+[0mPOST /create-order [32m200[0m 997.381 ms - 2[0m
+[0mPOST /webhook?id=13952248785&topic=merchant_order [32m200[0m 76.834 ms - 7[0m
+[0mPOST /webhook?id=13956207840&topic=merchant_order [32m200[0m 33.074 ms - 7[0m
+[0mPOST /webhook?id=68239952613&topic=payment [32m200[0m 12.256 ms - 7[0m
+[0mPOST /webhook?data.id=68239952613&type=payment [32m200[0m 11.977 ms - 7[0m
+[0mPOST /webhook?id=13956207840&topic=merchant_order [32m200[0m 31.419 ms - 7[0m
+paid
+Habilitar electrovalvula
+Fri Dec 08 2023 22:13:22 GMT-0300 (Uruguay Standard Time) : CHILD STARTED
+[0mPOST /webhook?id=13956207840&topic=merchant_order [32m200[0m 60.426 ms - 7[0m
+paid
+Habilitar electrovalvula
+Fri Dec 08 2023 22:13:23 GMT-0300 (Uruguay Standard Time) : CHILD STARTED
+Fri Dec 08 2023 22:13:39 GMT-0300 (Uruguay Standard Time) : CHILD ENDED
+Fri Dec 08 2023 22:13:40 GMT-0300 (Uruguay Standard Time) : CHILD ENDED
+{"in_store_order_id":"ced49b5d-8cad-4568-b648-8f8b4a437d44","qr_data":"00020101021243650016COM.MERCADOLIBRE020130636ced49b5d-8cad-4568-b648-8f8b4a437d445011000711111115204970053038585802UY5909Test Test6009UNDEFINED6304197E"}
+[0mPOST /create-order [32m200[0m 1009.550 ms - 2[0m
+[0mPOST /webhook?id=13956649688&topic=merchant_order [32m200[0m 30.405 ms - 7[0m
+[0mGET /success [32m200[0m 42.798 ms - 7[0m
+[0mGET /favicon.ico [33m404[0m 78.168 ms - 150[0m
+{"in_store_order_id":"3662003b-1e56-4cb9-964b-c540c1b00e39","qr_data":"00020101021243650016COM.MERCADOLIBRE0201306363662003b-1e56-4cb9-964b-c540c1b00e395011000711111115204970053038585802UY5909Test Test6009UNDEFINED6304AFEF"}
+[0mPOST /create-order [32m200[0m 1118.830 ms - 2[0m
+[0mPOST /webhook?id=13995444379&topic=merchant_order [32m200[0m 77.343 ms - 7[0m
